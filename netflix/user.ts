@@ -25,7 +25,7 @@ export class User extends BaseModel {
     new APIService<User>().update(new User(this.id, this.name, this.dateObBirth));
   }
   delete() {
-    new APIService<User>().delete(new User(this.id, this.name, this.dateObBirth));
+    new APIService<User>().delete(this.id);
   }
 }
 

@@ -17,7 +17,7 @@ export default class APIService<Model extends BaseModel> {
     console.log("add record " + record);
   }
 
-  delete(record: Model) {
-    console.log("add record " + record);
+  delete(id: Number) {
+    console.log("deleted record " + id);
   }
 }
