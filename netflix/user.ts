@@ -16,16 +16,16 @@ export class User extends BaseModel {
     new APIService<User>().add(new User(this.id, this.name, this.dateObBirth));
   }
   list() {
-    new APIService<User>().add(new User(this.id, this.name, this.dateObBirth));
+    new APIService<User>().list(new User(this.id, this.name, this.dateObBirth));
   }
   show() {
-    new APIService<User>().add(new User(this.id, this.name, this.dateObBirth));
+    new APIService<User>().show(new User(this.id, this.name, this.dateObBirth));
   }
   update() {
-    new APIService<User>().add(new User(this.id, this.name, this.dateObBirth));
+    new APIService<User>().update(new User(this.id, this.name, this.dateObBirth));
   }
   delete() {
-    new APIService<User>().add(new User(this.id, this.name, this.dateObBirth));
+    new APIService<User>().delete(new User(this.id, this.name, this.dateObBirth));
   }
 }
 
